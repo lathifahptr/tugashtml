@@ -1,0 +1,99 @@
+<!DOCTIPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="styledefinition.css">
+</head>
+<body>
+    <form action="contact.php" method="POST">
+<h2 class="font" style="color:black;">STUDENT REGISTRATION FORM </h2>
+<p>
+    <label>Date:</label>
+    <input type="date" name="tanggal" />
+</p>
+
+
+<fieldset>
+    <legend><h4>PERSONAL INFORMATION</h4></legend>
+    <p>
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="your name..." />
+    </p>
+    <p>
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" />
+    </p>
+    </fieldset>
+
+    <fieldset>
+        <legend><h4>CONTACT INFORMATION</h4></legend>
+        <p>
+            <label>Address:</label>
+            <input type="text" name="address" />
+        </p>
+        <p>
+            <label>City:</label>
+            <input type="text" name="city" />
+        </p>
+        <p>
+            <label>Province/State:</label>
+            <input type="text" name="province" />
+        </p>
+        <p>
+            <label>ZIP CODE:</label>
+            <input type="number" name="zipcode" />
+        </p>
+        <p>
+            <label>Country:</label>
+            <input type="text" name="country" />
+        </p>
+        <p>
+            <label>Phone number:</label>
+            <input type="number" name="phone" />
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="name@example.com" />
+        </p>
+        <p>
+            <label>Membership Type:</label>
+            <input type="radio" id="regular" name="membership" value="regular">
+            <label for="regular">Regular</label>
+            <input type="radio" id="premium" name="membership" value="premium">
+            <label for="premium">Premium</label>
+            <input type="radio" id="vip" name="membership" value="vip">
+            <label for="vip">VIP</label>
+        </p>
+        </fieldset>
+
+        <fieldset>
+            <legend><h4>COURSE INFORMATION</h4></legend>
+            <p>
+                <label>Course Name:</label><br>
+                <input type="checkbox" id="course1" name="course1" value="html">
+  <label for="course1"> HTML </label><br>
+  <input type="checkbox" id="course2" name="course2" value="python">
+  <label for="course2"> Python</label><br>
+  <input type="checkbox" id="course3" name="course3" value="java">
+  <label for="course3"> Javascript</label><br>
+  <input type="checkbox" id="course4" name="course4" value="java">
+  <label for="course4"> Java</label><br>
+  <input type="checkbox" id="course5" name="course5" value="c">
+  <label for="course5"> C</label><br>
+  <input type="checkbox" id="course6" name="course6" value="kotlin">
+  <label for="course6"> Kotlin</label><br>
+            </p>
+            <p>
+                <label>Payment Detail:</label>
+                <input type="radio" id="cash" name="payment" value="cash">
+                <label for="cash">Cash</label>
+                <input type="radio" id="cheque" name="payment" value="cheque">
+                <label for="cheque">Cheque</label>
+                <input type="radio" id="debit" name="payment" value="debit">
+                <label for="debit">Debit Card</label>
+            </p>
+            </fieldset>
+    <input id="submit" type="submit" name="submit" value="Send" />
+    </form>
+</body>
+</html>
